@@ -1,0 +1,25 @@
+﻿<html>
+<head>
+<meta charset='utf-8'>
+<title>게임</title>
+<script>
+function list(val) {
+    document.f1.method = "post" ;
+    document.getElementById("p1_id").value = parseInt(val);
+    document.f1.action = "list.php";
+    document.f1.submit();
+  }
+</script>
+</head>
+<body>
+
+<form name="f1">
+  <input type="hidden"  id="p1_id" name="p_id" value="">
+  <input type="hidden"   name="person" value="shim1111">
+</form>
+<p><a href="javascript:list(10000);">아웃도어</a></p>
+<p>유틸리티</p>
+<p><a href="javascript:list(20000);">주방용품</a></p>
+</body>
+
+</html>
